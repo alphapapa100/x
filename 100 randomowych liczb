@@ -1,0 +1,18 @@
+using System;
+
+namespace ConsoleApp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random rd = new Random();
+            for (int x = 0; x < 100; x++)
+            {
+                int rand_num = rd.Next(0, 20000000);
+                Console.WriteLine(rand_num);
+            }
+            Console.ReadKey();
+        }
+    }
+}
